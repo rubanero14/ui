@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: var(--background);
+    background: var(--background);
     display: grid;
     place-items: center;
     height: 100vh;
@@ -22,16 +22,16 @@ body {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .card {
     display: flex;
     flex-wrap: wrap;
     border-radius: 1.5rem;
-    background-color: white;
+    background: white;
     cursor: pointer;
     overflow: hidden;
-    transition: all 0.3s;
     max-width: clamp(20rem, 70vw, 46.25rem);
     min-width: 20rem;
     min-height: 17.5rem;
@@ -79,7 +79,9 @@ body {
 }
 
 .content a {
-    color: var(--primary-violet);
+    color: var(
+        --primary-violet
+    );
 }
 
 .chips {
@@ -94,13 +96,13 @@ body {
     border-radius: 0.5rem;
     padding: 0.25rem 0.5rem;
     font-size: 0.9375rem;
-    background-color: var(--gray);
+    background: var(--gray);
     transition: all 0.3s;
     font-weight: 500;
 }
 
 .chip:hover {
-    background-color: var(
+    background: var(
         --primary-violet);
     color: var(--gray)
 }
