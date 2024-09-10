@@ -42,7 +42,6 @@ body {
         6px 24px 0px;
 }
 
-
 .stock-watchlist-container h2 {
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
@@ -51,12 +50,12 @@ body {
     gap: 0.25rem;
 }
 
-.stock-watchlist-container h2 svg {
+.stock-watchlist-container 
+h2 svg {
     width: 1.5rem;
     height: 1.5rem;
     color: var(--gray-dark);
 }
-
 
 #stocks {
     display: flex;
@@ -147,3 +146,5 @@ body {
 .change--negative {
     background: var(--red);
 }
+
+
