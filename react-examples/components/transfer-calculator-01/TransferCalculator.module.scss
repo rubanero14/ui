@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+$primary: #9FE870;
+$primaryHover: #CDFFAD;
+$text: #163300;
+$widgetBg: #2A2D29;
+$bg: #121511;
+$white: #fff;
+$border: #555754;
+$textLight: #CACFBD;
+
+
+.container {
+    font-family: 'Inter', sans-serif;
+    background: $bg;
+    padding: 1rem;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container *::selection {
+    background: $primary;
+    color: $text;
+}
+
+.primary--btn {
+    background: $primary;
+    color: $text;
+    padding: 10px;
+    min-height: 2.75rem;
+    border-radius: 99rem;
+    border: none;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.primary--btn:hover {
+    background: $primaryHover;
+}
+
+.transfer-calculator {
+    background: $widgetBg;
+    color: $text;
+    max-width: 25rem;
+    padding: 1.5rem 1.25rem;
+    border-radius: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 15rem;
+}
+
+.transfer-calculator fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.transfer-calculator h1 {
+  color: $white;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.input__wrapper {
+  width: 100%;
+  display: flex;
+  position: relative;
+  background: $bg;
+  border-radius: 0.75rem;
+  align-items: center;
+}
+
+.input__wrapper:focus-within {
+  outline: 1px solid $primary;
+}
+
+.input__wrapper input {
+  padding: 0.5rem 1rem;
+  color: white;
+  background: transparent;
+  width: 100%;
+  border-radius: 99rem;
+  min-height: 3rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+}
+
+.fee-rate {
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+  border: 1px solid $border;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 0.75rem;
+  flex-direction: column;
+  justify-content: center;
+  color: $textLight;
+  align-items: center;
+}
+
+.fee-rate svg {
+  stroke: $primary;
+  width: 1rem;
+  height: 1rem;
+}
+
+.current-rate {
+  font-size: 1.25rem;
+  color: $white;
+  margin-bottom: 1rem;
+}
+
+.currency__select {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: $white;
+  position: absolute;
+  background: $bg;   
+  padding: 0 0 0 0.5rem;
+  right: 1rem;
+}
+
+.currency__select img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.switch__button {
+  position: relative;
+  z-index: 1;
+  border-radius: 99rem;
+  outline: none;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: -0.75rem;
+  margin-bottom: -0.75rem;
+  z-index: 1;
+  cursor: pointer;
+  background: $widgetBg;
+}
+
+.switch__button:focus {
+  outline: 1px solid $primary;
+}
+
+.switch__button svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: rotate(90deg);
+    fill: $primary;
+}

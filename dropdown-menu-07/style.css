@@ -1,3 +1,4 @@
+
 :root {
     --primary: #0969DA;
     --background: #24292F;
@@ -26,9 +27,7 @@ body {
     width: 100vw;
     z-index: 2;
     gap: 1.5rem;
-    background: var(
-        --background
-    );
+    background: var(--background);
     height: var(--navbar-height);
     padding: 0 1rem;
     align-items: center;
@@ -56,9 +55,7 @@ body {
     list-style-type: none;
     align-items: center;
     gap: 0.5rem;
-    background: var(
-        --background
-    );
+    background: var(--background);
 }
                
 .navigation > li {
@@ -84,7 +81,8 @@ body {
 
 .navigation > li > button {
     color: var(--white);
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid 
+    transparent;
     transition: all 0.3s ease;
     text-decoration: none;
     border: none;

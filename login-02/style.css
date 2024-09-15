@@ -16,7 +16,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Mulish, sans-serif;
+    font-family: Mulish, 
+        sans-serif;
 }
 
 .socials-row {
@@ -43,12 +44,14 @@ body {
     font-size: 1.1rem;
     color: var(--text);
     padding: 0.5rem;
-    border: 1px solid var(--primary-light);
+    border: 1px solid 
+        var(--primary-light);
     font-weight: 700;
 }
 
 .socials-row > a:hover {
-    border: 1px solid var(--primary);
+    border: 1px solid 
+        var(--primary);
 }
 
 .divider {
@@ -62,7 +65,7 @@ body {
 .divider-line {
     width: 100%;
     height: 1px;
-    background-color: var(--secondary);
+    background: var(--secondary);
     opacity: .2;
 }
 
@@ -91,7 +94,7 @@ body {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    background-color: var(--background);
+    background: var(--background);
 }
 
 .info-side h2 {
@@ -157,7 +160,7 @@ body {
 }
 
 .my-form__button {
-    background-color: var(--primary);
+    background: var(--primary);
     color: white;
     white-space: nowrap;
     border: none;
@@ -175,9 +178,11 @@ body {
     min-height: 3.125rem;
     width: 100%;
     border-radius: 0.5rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    box-shadow: 0 4px 10px 
+    rgba(0,0,0,.15);
     transition: all .3s ease;
-    -webkit-transition: all .3s ease;
+    -webkit-transition: all .3s 
+    ease;
 }
 
 .my-form__actions {
@@ -246,12 +251,14 @@ body {
     bottom: -0.25rem;
     width: 1.875rem;
     height: 1.875rem;
-    transform: translate(-50%,-50%);
+    transform: translate(
+        -50%,-50%);
     transform-origin: center;
 }
 
 .text-field input:focus {
-    border: 0.0625rem solid var(--primary);
+    border: 0.0625rem solid 
+        var(--primary);
 }
 
 .text-field label {
@@ -273,3 +280,5 @@ body {
         padding: 3rem 3rem 3rem 2rem;
     }
 }
+
+
