@@ -134,7 +134,7 @@ body {
 }
 
 .status--offline {
-    background-color: var(--gray);
+    background: var(--gray);
 }
 
 .tags {

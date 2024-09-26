@@ -181,7 +181,8 @@ header {
     color: var(--text-color);
 }
 
-.job__applicants img:nth-child(n+2) {
+.job__applicants 
+img:nth-child(n+2) {
     margin-left: -0.75rem;
 }
 
@@ -235,7 +236,8 @@ header {
     height: 1.75rem;
     width: 1.75rem;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s
+     ease-in-out;
     stroke: var(--primary);
 }
 

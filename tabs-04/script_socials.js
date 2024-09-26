@@ -69,14 +69,18 @@ const currentHash = window.location.hash;
 let activeLink = document.querySelector(`.tabs a`);
 
 if (currentHash) {
-  const visibleHash = document.getElementById(`${currentHash}`);
+  const visibleHash = document.getElementById(
+    `${currentHash}`
+  );
 
   if (visibleHash) {
     activeLink = visibleHash;
   }
 }
 
-const activeTab = document.querySelector(`#${activeLink.id}-content`);
+const activeTab = document.querySelector(
+  `#${activeLink.id}-content`
+);
 
 activeLink.classList.toggle("active");
 activeTab.classList.toggle("tab-content--active");
