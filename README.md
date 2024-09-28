@@ -7,7 +7,7 @@ Learn more with me [Modern Frontend Developer: HTML and CSS](https://learning.at
 * UI Components Collection
 * Frontend Resources
 * Quizzes And Certificate!
-* Interactive Tutorials (coming soon)
+* Interactive Tutorials
 * Coding Quizzes (coming soon)
 * Video Course (coming soon)
 
@@ -45,7 +45,7 @@ The examples are posted here:
 
 * [TikTok](https://www.tiktok.com/@davidm_ai)
 * [Instagram](https://www.instagram.com/davidm_ai/)
-* [Youtube](https://www.youtube.com/@Atheroslearning)
+* [Youtube](https://www.youtube.com/@davidm_ai)
 * [Twitter](https://twitter.com/davidm_ml)
 * [Linkedin](https://www.linkedin.com/in/david-mraz/)
 * [Threads](https://www.threads.net/@davidm_ai)
