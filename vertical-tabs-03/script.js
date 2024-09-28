@@ -58,7 +58,7 @@ shiftTabs(activeLink.id);
 const tabsSelect = document.querySelector(".tabs-select");
 
 tabsSelect.addEventListener("change", function (e) {
-  window.location.hash = e.target.value;
+  window.location.hash = e.target;
   const linkId = e.target.value;
   const elem = document.getElementById(linkId);
   handleLinkChange(elem);
