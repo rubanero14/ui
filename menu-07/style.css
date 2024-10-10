@@ -175,30 +175,37 @@ body {
     border: 1px solid var(--nav-bg);
 }
 
-.navigation__menu__items > li:not(.separator) {
+.navigation__menu__items 
+> li:not(.separator) {
     cursor: pointer;
 }
 
-.navigation__menu__items > li:not(.separator):hover {
+.navigation__menu__items 
+> li:not(.separator):hover {
     background: var(--nav-bg-hover);
     color: var(--color);
-    border: 1px solid var(--border-darker);
+    border: 1px solid var(
+        --border-darker);
 }
 
-.navigation__menu__items > li > svg {
+.navigation__menu__items 
+> li > svg {
     min-width: 1rem;
     fill: var(--color);
 }
 
-.navigation__menu__items > .separator {
+.navigation__menu__items 
+> .separator {
     display: flex;
     align-items: center;
     height: 0.4rem;
     padding: 0;
 }
 
-.navigation__menu__items > .separator > hr {
-    border: 0.5px solid var(--border-darker);
+.navigation__menu__items 
+> .separator > hr {
+    border: 0.5px solid 
+    var(--border-darker);
     width: 100%;
 }
 
@@ -243,7 +250,9 @@ body {
 }
 
 .close-button:hover {
-    background: var(--nav-bg-hover);
+    background: var(
+        --nav-bg-hover
+    );
 }
 
 .close-button svg {
@@ -270,7 +279,8 @@ body {
 }
 
 .hide {
-    animation: fadeOutAnimation ease-in-out 0.5s forwards;
+    animation: fadeOutAnimation 
+    ease-in-out 0.5s forwards;
 }
 
 
