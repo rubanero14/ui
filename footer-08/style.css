@@ -82,9 +82,13 @@ footer {
     color: var(--text-color);
     outline: none;
     border: none;
-    outline: 1px solid var(--text-color);
+    outline: 1px solid var(
+        --text-color
+    );
     min-height: 2.25rem;
-    background: var(--footer-background);
+    background: var(
+        --footer-background
+    );
     font-size: 1.2rem;
     flex: 1 0 120px;
     padding: 1rem 0.75rem;
@@ -93,10 +97,12 @@ footer {
 }
 
 .footer-subscribe > input:focus {
-    outline: 2px solid var(--primary);
+    outline: 2px solid 
+        var(--primary);
 }
 
-.footer-subscribe > input::placeholder {
+.footer-subscribe 
+> input::placeholder {
     color: var(--text-color);
 }
 
@@ -223,7 +229,8 @@ footer {
     justify-content: end;
     margin-top: 2rem;
     padding-top: 1.5rem;
-    border-top: 1px solid var(--text-color);
+    border-top: 1px solid 
+        var(--text-color);
 }
 
 .social-links {
@@ -245,7 +252,6 @@ footer {
 }
 
 /*? mobile */
-
 @media (max-width: 800px) {
 
     .footer-columns {
