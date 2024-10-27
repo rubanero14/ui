@@ -1,0 +1,74 @@
+:root {
+    --background: #1F2336;
+    --scrollbar-background: #313852;
+    --text: #F1F1F1;
+    --text-active: #F1F1F180;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    height: 100vh;
+    display: flex;
+    background: var(--background);
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 200px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.card {
+    min-width: 12.5rem;
+    max-height: 8.25rem;
+    color: var(--text);
+    display: flex;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: all 0.2s;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    scroll-snap-align: start;
+    overflow: hidden;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.container::-webkit-scrollbar {
+    height: 0.65rem;
+}
+
+.container::-webkit-scrollbar-track {
+    background: var(
+        --scrollbar-background
+    );
+    border-radius: 50rem;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: var(--text);
+    border-radius: 50rem;
+}
+

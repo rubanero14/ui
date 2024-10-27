@@ -76,7 +76,9 @@ body {
 .socials-row>a:hover {
     border: 1.5px solid var(
         --primary);
-    background: var(--primary-transparent); 
+    background: var(
+        --primary-transparent
+    ); 
 }
 
 .login-welcome-row {
@@ -142,7 +144,8 @@ body {
 
 .text-field input:user-invalid {
     color: var(--error);
-    border: 1.5px solid var(--error);
+    border: 1.5px solid 
+        var(--error);
 }
 
 .error-message {
@@ -180,7 +183,8 @@ body {
 
 .my-form__button {
     background: linear-gradient(
-        90deg, var(--primary), var(--violet)
+        90deg, var(--primary),
+        var(--violet)
     );
     color: white;
     white-space: nowrap;
