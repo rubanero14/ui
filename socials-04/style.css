@@ -1,5 +1,5 @@
 :root {
-    --background: #060D23;
+    --bg: #060D23;
     --linkedin: #0A66C2;
     --youtube: #e52d27;
     --x: #0F1419;
@@ -13,20 +13,20 @@
 }
 
 body {
-    background: var(--background);
+    background: var(--bg);
     display: grid;
     place-items: center;
     height: 100vh;
 }
 
-.social-media-buttons {
+.socials {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-.social-media-button {
+.socials a {
     width: 3rem;
     height: 3rem;
     border: none;
@@ -39,20 +39,20 @@ body {
     place-items: center;
 }
 
-.social-media-button:hover {
+.socials a:hover {
     outline-offset: 3px;
     transition: all 0.3s;
 }
 
-.social-media-button img {
+.socials svg {
     transition: all 0.3s;
 }
 
-.social-media-button:hover img {
+.socials a:hover svg {
     transform: scale(1.15);
 }
 
-.social-media-button:hover:nth-child(1) {
+.socials a:hover:nth-child(1) {
     background:  radial-gradient(
         circle at 30% 107%, #fdf497 0%, 
         #fdf497 5%, #fd5949 45%,
@@ -60,18 +60,18 @@ body {
     ); 
 }
 
-.social-media-button:hover:nth-child(2) {
+.socials a:hover:nth-child(2) {
     background-color: var(--white);
 }
 
-.social-media-button:hover:nth-child(2) svg {
+.socials a:hover:nth-child(2) svg {
     stroke: var(--x);
 }
 
-.social-media-button:hover:nth-child(3) {
+.socials a:hover:nth-child(3) {
     background-color: var(--youtube);
 }
 
-.social-media-button:hover:nth-child(4) {
+.socials a:hover:nth-child(4) {
     background-color: var(--linkedin);
 }
