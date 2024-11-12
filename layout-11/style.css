@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+    grid-area: header;
+    background: #484fff;
+}
+
+nav {
+    grid-area: nav;
+    background: #ffc038;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 8fr 3fr;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.blog {
+    background: #16ff92;
+}
+
+.popular-posts {
+    background: #9950ff;
+}
+
+footer {
+    grid-area: footer;
+    background: #484fff;
+}
+
+.right-side article:nth-child(1), 
+.left-side article:nth-child(1) {
+    background: #e76f51;
+}
+
+
+.right-side article:nth-child(2), 
+.left-side article:nth-child(2) {
+    background: #0fabff;
+}
+
+
+.right-side article:nth-child(3), 
+.left-side article:nth-child(3) {
+    background: #ffb835;
+}
+
+.left-side {
+    grid-area: left-side;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.right-side {
+    grid-area: right-side;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.layout {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-rows: 
+        6rem 6rem 8rem 
+        auto 8rem 6rem;
+    grid-template-columns: 1fr;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    height: 100vh;
+    grid-template-areas:
+        'header header header'
+        'nav nav nav'
+        'left-side left-side left-side'
+        'main main main'
+        'right-side right-side right-side'
+        'footer footer footer';
+}
+
+@media (min-width: 640px) {
+    .left-side {
+        grid-area: left-side;
+        display: grid;
+        gap: 0.5rem;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .right-side {
+        grid-area: right-side;
+        display: grid;
+        gap: 0.5rem;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        grid-template-rows: 10fr 3fr;
+        grid-template-columns: 1fr;
+    }
+ 
+    .layout {
+        display: grid;
+        gap: 0.5rem;
+        grid-template-rows: 
+            6rem 8rem 
+            auto 6rem;
+        grid-template-columns: 1fr 3fr 1fr;
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: bold;
+        grid-template-areas:
+            'header header header'
+            'nav nav nav'
+            'left-side main right-side'
+            'footer footer footer';
+    }
+}

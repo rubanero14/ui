@@ -1,5 +1,10 @@
 :root {
     --bg: #060D23;
+    --instagram: radial-gradient(
+        circle at 30% 107%, #fdf497 0%, 
+        #fdf497 5%, #fd5949 45%,
+        #d6249f 60%,#285AEB 90%
+    );
     --linkedin: #0A66C2;
     --youtube: #e52d27;
     --x: #0F1419;
@@ -53,15 +58,11 @@ body {
 }
 
 .socials a:hover:nth-child(1) {
-    background:  radial-gradient(
-        circle at 30% 107%, #fdf497 0%, 
-        #fdf497 5%, #fd5949 45%,
-        #d6249f 60%,#285AEB 90%
-    ); 
+    background: var(--instagram);
 }
 
 .socials a:hover:nth-child(2) {
-    background-color: var(--white);
+    background: var(--white);
 }
 
 .socials a:hover:nth-child(2) svg {
@@ -69,9 +70,9 @@ body {
 }
 
 .socials a:hover:nth-child(3) {
-    background-color: var(--youtube);
+    background: var(--youtube);
 }
 
 .socials a:hover:nth-child(4) {
-    background-color: var(--linkedin);
+    background: var(--linkedin);
 }
