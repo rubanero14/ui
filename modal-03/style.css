@@ -1,0 +1,307 @@
+
+
+:root {
+    --primary: #6E45FE;
+    --primary-hover: #6034ff;
+    --btn-border: #7f57ff;
+    --white: white;
+    --text: #252728;
+    --headline: #1A1E1F;
+    --content-text: #9D9D9D;
+    --bg: #cacaca;
+    --bg-input: #3B3B3C;
+    --bg-modal: #272729;
+    --bg-footer: #191919;
+    --bg-btn: #3A3A3A;
+    --footer-text: #676767;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*::selection {
+    background: var(--primary);
+    color: var(--white);
+}
+
+body {
+    font-family: 'Mulish', 
+    sans-serif;
+    background: var(--bg);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    padding: 1rem;
+}
+
+/* share btn */
+.share-btn {
+    border-radius: 50%;
+    appearance: none;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    color: var(--btn-text);
+    background: var(--primary); 
+}
+
+.share-btn svg {
+    stroke: var(--white);
+    width: 2rem;
+    height: 2rem;
+}
+
+.share-btn:hover {
+    background: 
+        var(--primary-hover);
+}
+
+/* close btn */
+.close-btn {
+    background: inherit;
+    cursor: pointer;
+    border: none;
+}
+
+.close-btn svg {
+    stroke: var(--white);
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+/* modal dialog */
+.copy-link-dialog {
+    border-radius: 2rem;
+    max-width: 36rem;
+    margin: 0 auto;
+    margin-top: 8rem;
+    width: 100%;
+    border: none;
+    background: var(--bg-modal);
+    box-shadow: 0 8px 24px
+    rgba(0, 0, 0, 0.2);
+}
+
+.copy-link-dialog header {
+    display: flex;
+    padding: 1.5rem 2rem 0.5rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy-link-dialog footer {
+    background: var(--bg-footer);
+    color: var(--footer-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+/* copy link description */
+.copy-link-description {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copy-link-description .description {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+}
+
+.copy-link-dialog footer .description a {
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.copy-link-dialog header h2 {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.copy-link-dialog__content {
+    padding: 2rem;
+    color: var(--white);
+}
+
+.copy-link-dialog__content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.copy-link-wrapper {
+    display: flex;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    color: var(--white);
+    justify-content: space-between;
+    background: var(--bg-input);
+    padding: 0.25rem;
+    padding-left: 1.5rem;
+}
+
+.copy-link-wrapper input {
+    color: var(--white);
+    outline: none;
+    border: none;
+    width: 100%;
+    font-weight: 800;
+    background: inherit;
+    font-size: 1.2rem;
+}
+
+.copy-link-wrapper input::selection {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.copy-link-dialog h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.primary-btn {
+    color: var(--white);
+    background: var(--primary);
+    border: 1px solid var(--btn-border);
+    white-space: nowrap;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.primary-btn:hover {
+    background: var(--primary-hover);
+}
+
+/* shared with */
+
+.shared-with {
+    padding: 0 2rem;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin: 2rem 0;
+}
+
+.shared-with h2 {
+    font-size: 1.2rem;
+    color: var(--content-text);
+    margin-bottom: 1rem;
+}
+
+.access-list {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.access {
+    display: flex;
+    gap: 1rem;
+    color: var(--white);
+    align-items: center;
+}
+
+.access img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#share-to-teammate {
+    color: var(--white);
+    background: inherit;
+    outline: none;
+    border: none;
+    padding: 0 0.5rem;
+    width: 100%;
+}
+
+#autocomplete-results {
+    background: var(--bg-input);
+    border-radius: 0.5rem;
+    margin: 0 2rem;
+}
+
+#autocomplete-results li {
+    list-style: none;
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    cursor: pointer;
+    color: var(--white);
+    border-bottom: 1px solid var(--text);
+}
+
+#autocomplete-results li img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* custom select */
+.access-select {
+    margin-left: auto;
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-input);
+    border-radius: 0.5rem;
+    min-width: 6rem;
+    min-height: 2rem;
+    padding: 0.25rem;
+}
+
+.access-select select {
+    background: inherit;
+    color: var(--white);
+    border: none;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.access-select select:focus {
+    outline: 2px solid var(--primary);
+}
+
+/* share to teams */
+.share-to-teams {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.75rem 2rem;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    background: var(--bg-input);
+}
+
+

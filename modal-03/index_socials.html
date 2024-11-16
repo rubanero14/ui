@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Share the link</title>
+    <!--? loading Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="dist/purify.min.js"></script>
+</head>
+
+<body>
+    <button popovertarget="copy-link-dialog" type="button" class="share-btn">
+        <!-- svg -->
+    </button>
+    <dialog id="copy-link-dialog" class="copy-link-dialog" popover>
+        <form>
+            <header>
+                <h2>Share with your team mates</h2>
+                <button class="close-btn secondary" type="button">
+                    <!-- svg close -->
+                </button>
+            </header>
+            <div class="share-to-teams">
+                <input 
+                    id="share-to-teammate" 
+                    placeholder="Share with your team"
+                >
+                <button class="primary-btn share-team-btn" type="button">
+                    <!-- svg -->  Share
+                </button>
+            </div>
+            <ul id="autocomplete-results">
+            </ul>
+            <div class="shared-with">
+                <h2>Shared With</h2>
+                <div class="access-list"></div>  
+            </div>
+            <footer>
+                <div class="copy-link-description">
+                    <div class="description">
+                        <!-- svg -->
+                        Anyone with the link 
+                        <div class="access-select">
+                            <select selected="read">
+                                <option value="read">can read</option>
+                                <!-- more options -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-link-wrapper">
+                    <input id="copy-link-input" type="text" required value="https://example.com/share-this" readonly>
+                    <button class="primary-btn copy-link-btn" type="button">
+                        <!-- svg icon -->
+                        <span id="copy-link-btn">
+                            Copy Link
+                        </span>
+                    </button>
+                </div>
+             
+            </footer>
+        </form>
+    </dialog>
+    <script src="script.js"></script>
+</body>
