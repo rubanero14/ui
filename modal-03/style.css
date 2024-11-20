@@ -47,7 +47,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s 
+    ease-in-out;
     cursor: pointer;
     color: var(--btn-text);
     background: var(--primary); 
@@ -123,7 +124,8 @@ body {
     align-items: center;
 }
 
-.copy-link-dialog footer .description a {
+.copy-link-dialog footer 
+.description a {
     color: var(--white);
     text-decoration: none;
     display: flex;
@@ -167,7 +169,8 @@ body {
     font-size: 1.2rem;
 }
 
-.copy-link-wrapper input::selection {
+.copy-link-wrapper 
+input::selection {
     background: var(--primary);
     color: var(--white);
 }
@@ -181,7 +184,8 @@ body {
 .primary-btn {
     color: var(--white);
     background: var(--primary);
-    border: 1px solid var(--btn-border);
+    border: 1px solid 
+        var(--btn-border);
     white-space: nowrap;
     padding: 0.5rem 1rem;
     border-radius: 0.4rem;
@@ -191,7 +195,8 @@ body {
     gap: 0.5rem;
     font-size: 1.1rem;
     align-items: center;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s 
+        ease-in-out;
 }
 
 .primary-btn:hover {
@@ -244,7 +249,8 @@ body {
 }
 
 #autocomplete-results {
-    background: var(--bg-input);
+    background: 
+        var(--bg-input);
     border-radius: 0.5rem;
     margin: 0 2rem;
 }
@@ -257,7 +263,8 @@ body {
     align-items: center;
     cursor: pointer;
     color: var(--white);
-    border-bottom: 1px solid var(--text);
+    border-bottom: 1px 
+        solid var(--text);
 }
 
 #autocomplete-results li img {
@@ -290,7 +297,8 @@ body {
 }
 
 .access-select select:focus {
-    outline: 2px solid var(--primary);
+    outline: 2px solid 
+        var(--primary);
 }
 
 /* share to teams */
