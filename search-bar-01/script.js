@@ -21,9 +21,8 @@ const actionList = [
 
 const resultBox = document.querySelector(".results");
 const inputBox = document.querySelector(".search-bar");
-let input;
 
-const displayResults = (result) => {
+const displayResults = (result, input) => {
   if (result.length > 0) {
     const resultHTML = result.map((action) => {
       return `<li><a href="${action.link}">${action.icon}${action.name}</a></li>`;
@@ -41,7 +40,8 @@ const displayResults = (result) => {
 };
 
 inputBox.onkeyup = () => {
-  let result = [];
+  let input,
+    result = [];
 
   input = inputBox.value.toLowerCase();
   if (input.length === 0) {
@@ -53,6 +53,6 @@ inputBox.onkeyup = () => {
       return action.name.toLowerCase().includes(input);
     });
 
-    displayResults(result);
+    displayResults(result, input);
   }
 };
