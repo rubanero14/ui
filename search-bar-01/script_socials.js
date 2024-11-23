@@ -29,10 +29,9 @@ const displayResults = (result, input) => {
 };
 
 inputBox.onkeyup = () => {
-  let input,
-    result = [];
+  let result = [];
 
-  input = inputBox.value.toLowerCase();
+  const input = inputBox.value.toLowerCase();
   if (input.length === 0) {
     resultBox.innerHTML = ``;
   }
