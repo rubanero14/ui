@@ -54,39 +54,54 @@ const createAccessMarkup = (person) => {
   </div>`);
 }
 
-const accesses = peopleWithActualAccess.map((access) => {
-  const person = peopleWithPotentialAccess.find((potentialPerson) => potentialPerson.id === access.userId);
-  return createAccessMarkup(person);
+const accesses = peopleWithActualAccess.map(
+  (access) => {
+    const person = peopleWithPotentialAccess.find(
+      (potentialPerson) => 
+        potentialPerson.id === access.userId
+    );
+    return createAccessMarkup(person);
 })
 
 accessList[0].innerHTML = accesses;
 
 //? autocomplete for sharing with teammates
-const input = document.getElementById('share-to-teammate');
+const input = document.getElementById(
+  'share-to-teammate'
+);
 
 let resultToSubmit = {};
-const autoCompleteResults = document.getElementById('autocomplete-results')
+const autoCompleteResults = document.getElementById(
+  'autocomplete-results'
+)
 
 input.onkeyup = function(e) {
   inputVal = this.value;
 
   if (inputVal.length > 0) {
-    const filteredResults = peopleWithPotentialAccess.filter((person) => {
-      if (person.name.toLowerCase().includes(inputVal.toLowerCase())) {
+    const filteredResults = peopleWithPotentialAccess.filter(
+      (person) => {
+        if (person.name.toLowerCase()
+            .includes(inputVal.toLowerCase())) {
 
-        const isAlreadyShared = peopleWithActualAccess.find((access) => access.userId === person.id);
-        if (!isAlreadyShared) {
-          return true
+          const isAlreadyShared = peopleWithActualAccess.find(
+            (access) => access.userId === person.id
+          );
+          
+          if (!isAlreadyShared) {
+            return true
+          }
         }
-      }
-      
-      return false;
+        
+        return false;
     });
 
     autoCompleteResults.innerHTML = '';
     filteredResults.forEach((person) => {
       const li = document.createElement('li');
-      li.innerHTML = DOMPurify.sanitize(`<img src="${person.src}" alt="${person.name}">${person.name}`);
+      li.innerHTML = DOMPurify.sanitize(
+        `<img src="${person.src}" alt="${person.name}">${person.name}`
+      );
       li.addEventListener('click', (e) => {
         e.preventDefault();
         input.value = person.name;
@@ -107,7 +122,10 @@ input.onkeyup = function(e) {
 }
 
 shareTeamBtn.addEventListener('click', () => {
-  const person = peopleWithPotentialAccess.find((potentialPerson) => potentialPerson.name === input.value);
+  const person = peopleWithPotentialAccess
+    .find((potentialPerson) => 
+      potentialPerson.name === input.value
+  );
   const newAccess= createAccessMarkup(person);
   accessList[0].innerHTML += newAccess;
   peopleWithActualAccess.push(resultToSubmit);

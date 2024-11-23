@@ -32,7 +32,8 @@ inputIcon.addEventListener("click", (e) => {
 });
 
 input.addEventListener("keyup", function(){
-    let pass = document.getElementById("password").value;
+    let pass = document.getElementById(
+        "password").value;
     checkStrength(pass);
 });
 
@@ -45,10 +46,14 @@ const progressBarClasses = [
 const passwordRule = (rule, ruleClass, strength) => {
     if (rule) {
         strength += 1;
-        const img = document.querySelector(`.${ruleClass} img`);    
+        const img = document.querySelector(
+            `.${ruleClass} img`
+        );    
         img.src = 'assets/circle-check.svg';
     } else {
-        const img = document.querySelector(`.${ruleClass} img`);        
+        const img = document.querySelector(
+            `.${ruleClass} img`
+        );        
         img.src = 'assets/circle-cross.svg';
     }
     return strength;
